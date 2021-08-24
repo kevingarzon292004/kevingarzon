@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0px 5px 5px black;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: Concert;
+    padding: 50px 0;
+    margin-bottom: 60px;
+    border-bottom: 3px solid black;
+    color: black;
+    background-color: lightskyblue;
+}
+
+body{
+    background-image: url(../imagenes/prueba2.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.principal{
+    width: 1200px;
+    height: 1700px;
+    background-color: rgb(199, 195, 188);
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor{
+    width: 100%;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor .tarjeta{
+    width: 300px;
+    height: 410px;
+    /* background-color: rgba(0, 0, 0, 0.288); */
+    /* background-color: black;
+    color: turquoise; */
+    background-color: white;
+    color: black;
+    box-shadow: 0px 2px 2px black;
+    border-radius: 8px;
+    /* box-shadow: 0px 2px 2px rgb(0, 0, 0); */
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.contenedor .tarjeta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 17px 16px turquoise;
+}
+
+.contenedor .tarjeta img{
+    width: 300px;
+    height: 200px;
+}
+
+.contenedor .tarjeta h4{
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: Rampart;
+}
+
+.contenedor .tarjeta p{
+    padding:  0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: Bebas;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.contenedor .tarjeta a{
+    font-weight: 1000;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    font-family: Amatic;
+}
+
+.contenedor .tarjeta a:hover{
+    border-bottom: 4px solid turquoise;
+}
+
+footer{
+    background: gray;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.icon:hover{
+    width: 20px;
+    height: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.p1{
+    border-right: solid 1px black;
+    margin-right: 20px;
+    padding-right: 30px;
+}
+
+footer h2{
+    width: 100%;
+    height: 22px;
+    font-size: 15px;
+    font-weight: 110;
+    margin-top: 85px;
+    background: black;
+    color: white;
+    text-align: center;
+}

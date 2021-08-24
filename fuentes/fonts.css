@@ -1,0 +1,34 @@
+@font-face {
+    font-family: No Virus;
+    src: url(../fuentes/No\ Virus.ttf);
+}
+
+@font-face {
+    font-family: Goma ;
+    src: url(../fuentes/gomarice_goma_block.ttf);
+}
+
+@font-face {
+    font-family: Roman;
+    src: url(../fuentes/RomanMurphyDemoItalic.ttf);
+}
+
+@font-face {
+    font-family: Ostrich;
+    src: url(../fuentes/Ostrich\ Habitat.ttf);
+}
+
+@font-face {
+    font-family: Bebas;
+    src: url(../fuentes/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: Rampart;
+    src: url(../fuentes/RampartOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Concert;
+    src: url(../fuentes/ConcertOne-Regular.ttf);
+}

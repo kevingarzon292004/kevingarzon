@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(204, 203, 203);
+}
+
+header{
+    width: 100%;
+    height: 300px;
+    background-image: url(../imagenes/prueba.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.principal{
+    width: 100%;
+    height: 80%;
+}
+
+.logo{
+    width: 850px;
+    height: 115px;
+    padding-top: 20px;
+    display: block;
+    margin: auto;
+}
+
+.principal h1{
+    text-align: center;
+    margin-top: 40px;
+    font-family: Goma;
+    font-weight: 100;
+    font-size: 30px;
+    text-shadow: turquoise 0px 0px 5px;
+}
+
+.navegador{
+    width: 100%;
+    margin: 30px auto;
+    background: black;
+}
+
+.navegador ul{
+    list-style: none;
+}
+
+.nav > li{
+    position: relative;
+    display: inline-block;
+    margin: 0 114px;
+}
+
+.nav > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: turquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.nav li:hover{
+    background: turquoise;
+}
+
+.nav li a:hover{
+    color: black;
+    transition: all .05s;
+}
+
+.subnav{
+    position: absolute;
+    background: black;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.6s;
+    width: 100%;
+}
+
+.subnav li a{
+    display: block;
+    padding: 15px;
+    color: turquoise;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+
+.nav .subnav li:hover{
+    background: turquoise;
+}
+
+.nav li:hover .subnav{
+    visibility: visible;
+    opacity: 1;
+}
+
+main{
+    width: 100%;
+    height: 400px;
+    margin-top: 300px;
+}
+
+.slider{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s ease-in-out;
+    display: block;
+    margin: auto;
+    animation: slider 28s infinite linear;
+    margin-left: 100px;
+}
+
+.slider2{
+    position: relative;
+    width: 500px;
+    height: 600px;
+    border-radius: 20px;
+    border: 3px solid black;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.1s ease-in-out;
+    display: block;
+    margin: auto;
+    animation: slider2 28s infinite linear;
+    margin-right: 100px;
+    margin-top: -600px;
+}
+
+
+.contenido{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido h1{
+    margin: 0;
+    padding: 0;
+    /* padding-bottom: 40px; */
+    text-align: center;
+    font-family: Concert;
+    font-weight: 300;
+    font-size: 30px;
+    text-shadow: turquoise 2px 0px 3px;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.863);
+}
+
+.contenido a{
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    padding: 9px 20px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.contenido a:hover{
+    background-color: black;
+    color: turquoise;
+    border: 1px solid turquoise;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(../imagenes/alan.jpg);
+    }
+
+    25%{
+        background-image: url(../imagenes/alan.jpg);
+    }
+
+    26%{
+        background-image: url(../imagenes/charles.jpg);
+    }
+
+    50%{
+        background-image: url(../imagenes/charles.jpg);
+    }
+
+    51%{
+        background-image: url(../imagenes/leonardo.jpg);
+    }
+
+    75%{
+        background-image: url(../imagenes/leonardo.jpg);
+    }
+
+    76%{
+        background-image: url(../imagenes/alJuarismo.PNG);
+    }
+
+    100%{
+        background-image: url(../imagenes/alJuarismo.PNG);
+    }
+}
+
+@keyframes slider2{
+    
+    0%{
+        background-image: url(../imagenes/java.png);
+    }
+
+    25%{
+        background-image: url(../imagenes/java.png);
+    }
+
+    26%{
+        background-image: url(../imagenes/python.jpg);
+    }
+
+    50%{
+        background-image: url(../imagenes/python.jpg);
+    }
+
+    51%{
+        background-image: url(../imagenes/c++.png);
+    }
+
+    75%{
+        background-image: url(../imagenes/c++.png);
+    }
+
+    76%{
+        background-image: url(../imagenes/javascript.png);
+    }
+
+    100%{
+        background-image: url(../imagenes/javascript.png);
+    }
+}
+
+
+.peliculas{
+    width: 100%;
+    height: 500px;
+    margin-top: 250px;
+}
+
+.ptexto{
+    width: 100%;
+    height: 60px;
+    border-top: 2px solid black;
+}
+
+.ptexto h2{
+    text-align: center;
+    font-family: Bebas;
+    font-weight: 100;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.tarjetas{
+    /* width: 1100px; */
+    width: 100%;
+    height: 495px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+    padding-bottom: 70px;
+}
+
+.tarjetaWrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta{
+    width: 320px;
+    height: 440px;
+    background-color: black;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.adelante{
+    width: 100%;
+}
+
+.atras{
+    transform: rotateY(180deg);
+
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    color: turquoise;
+    font-family: Bebas;
+    font-weight: 100;
+    font-size: 22px;
+}
+
+.tarjetaWrap:hover .tarjeta{
+    transform: rotateY(180deg);
+}
+
+.tar1{
+    background-image: url(../imagenes/codigoenigma.jpg);
+    background-size: cover;
+}
+
+.tar2{
+    background-image: url(../imagenes/piratas.jpg);
+    background-size: cover;
+}
+
+.tar3{
+    background-image: url(../imagenes/redsocial.jpg);
+    background-size: cover;
+}
+
+
+footer{
+    background: rgb(199, 195, 188);
+    width: 100%;
+    height: 250px;
+    margin-top: 1350px;
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: solid 1px black;
+    border-top: solid 1px black;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.icon:hover{
+    width: 20px;
+    height: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.p1{
+    border-right: solid 1px black;
+    margin-right: 20px;
+    padding-right: 30px;
+}
+
+footer h2{
+    width: 100%;
+    height: 22px;
+    font-size: 15px;
+    font-weight: 110;
+    margin-top: 85px;
+    background: black;
+    color: white;
+    text-align: center;
+}
